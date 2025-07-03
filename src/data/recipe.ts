@@ -1,3 +1,5 @@
+import pancakesImg from '../assets/pancake.jpg';
+
 interface Recipe {
   id: number;
   title: string;
@@ -5,7 +7,7 @@ interface Recipe {
   image: string;
   ingredients: string[];
   steps: string[];
-  category: string;
+  category: string; 
 }
 
 const recipes: Recipe[] = [
@@ -13,7 +15,7 @@ const recipes: Recipe[] = [
     id: 1,
     title: "Classic Pancakes",
     description: "Fluffy, easy pancakes for your breakfast.",
-    image: "",
+    image: pancakesImg,
     ingredients: ["Flour", "Eggs", "Milk", "Baking powder", "Sugar"],
     steps: [
       "Mix all dry ingredients.",

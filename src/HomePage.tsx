@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import recipes from "./data/recipe";
+import './styles.css';
 
 const HomePage = () => {
   return (
@@ -8,10 +9,10 @@ const HomePage = () => {
         <Link
           key={recipe.id}
           to={`/recipe/${recipe.id}`}
-          className="container"
-        >
-          {/* <img src={recipe.image} alt={recipe.title} className="w-full h-48 object-cover rounded-t" /> */}
-          <h2 className="container">🍳{recipe.title}</h2>
+          className="nav">
+          {}
+          <img src={recipe.image} alt={recipe.title} className="recipe-image" />
+          <h2 style={{ color: 'Black', fontSize: '24px', marginBottom: '10px' }}>🍳{recipe.title}</h2>
         </Link>
       ))}
     </div>

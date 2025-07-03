@@ -61,3 +61,11 @@ h1 {
   font-size: 1.2rem;
   font-weight: 600;
 }
+
+.recipe-image {
+  max-width: 300px;   /* adjust as needed */
+  height: auto;
+  border-radius: 8px; /* optional for rounded corners */
+  display: block;     /* remove extra spacing */
+  margin: 1rem auto;  /* center with margin */
+}
