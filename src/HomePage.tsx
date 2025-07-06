@@ -4,15 +4,11 @@ import './styles.css';
 
 const HomePage = () => {
   return (
-    <div className="container">
+    <div className="recipe-grid">
       {recipes.map((recipe) => (
-        <Link
-          key={recipe.id}
-          to={`/recipe/${recipe.id}`}
-          className="nav">
-          {}
-          <img src={recipe.image} alt={recipe.title} className="recipe-image" />
-          <h2 style={{ color: 'Black', fontSize: '24px', marginBottom: '10px' }}>🍳{recipe.title}</h2>
+        <Link key={recipe.id} to={`/recipe/${recipe.id}`} className="recipe-card">
+          <img src={recipe.image} alt={recipe.title}/>
+          <h2>{recipe.title}</h2>
         </Link>
       ))}
     </div>
