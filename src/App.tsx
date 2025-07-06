@@ -7,11 +7,14 @@ import './styles.css';
 function App() {
   return (
     <>
+      <div className="background-overlay"></div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/recipe/:id" element={<RecipePage />} />
-      </Routes>
+      <div className="background-container">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/recipe/:id" element={<RecipePage />} />
+        </Routes>
+      </div>
     </>
   );
 }

@@ -1,0 +1,52 @@
+.navbar {
+  background: rgba(255, 255, 255, 0.7); 
+  backdrop-filter: blur(10px);
+  padding: 1rem 2rem;
+  position: sticky; /* remove to make it transparent */
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  padding: 10px;
+  text-align: center; 
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-logo {
+  font-family: "Bitcount Grid Double", system-ui;
+  font-size: 4rem;
+  color: #8a184a;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  letter-spacing: 0.5px;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal
+}
+
+.navbar-logo-img {
+  width: 70px;         
+  height: 70px;         
+  object-fit: contain;  
+  margin-right: 10px;  
+  vertical-align: middle;
+  
+}
+
+.navbar-logo:hover {
+  color: #a6738c; 
+  transform: scale(1.05);
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
+}
+
+.navbar-title {
+  font-size: 4rem;
+  margin-top: 5px;
+}
