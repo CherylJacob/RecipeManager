@@ -63,14 +63,13 @@ h1 {
 }
 
 .recipe-image {
-  max-width: 300px;   /* adjust as needed */
+  max-width: 300px;   
   height: auto;
-  border-radius: 8px; /* optional for rounded corners */
-  display: block;     /* remove extra spacing */
-  margin: 1rem auto;  /* center with margin */
+  border-radius: 8px; 
+  display: block;     
+  margin: 1rem auto;  
 }
-/* 
-/* Better method using an overlay */
+
 .background-overlay {
   position: fixed;
   top: 0;
@@ -79,9 +78,9 @@ h1 {
   height: 100%;
   background: url('/assets/background.jpg') no-repeat center center fixed;
   background-size: cover;
-  opacity: 0.2; /* Adjust for desired transparency */
-  z-index: -1;   /* Keeps it behind all content */
-} */
+  opacity: 0.2; 
+  z-index: -1;  
+}
 
 /* .background-container {
   background-image: url('/assets/background.png');
