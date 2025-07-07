@@ -9,12 +9,20 @@ import './styles.css';
 import type { Recipe } from './types';
 
 function App() {
-    const [searchQuery, setSearchQuery] = useState('');
-    const [recipes, setRecipes] = useState<Recipe[]>([]);
+    const [searchInputValue, setSearchInputValue] = useState(''); // New state for input value
 
     const handleSearch = (query: string) => {
-        setSearchQuery(query.toLowerCase());
+        setSearchInputValue(query); // Update input display
+        setSearchQuery(query.toLowerCase()); // Update filter
     };
+
+    const resetSearch = () => {
+        setSearchQuery('');
+        setSearchInputValue(''); // Clear the input field
+    };
+
+    const [searchQuery, setSearchQuery] = useState('');
+    const [recipes, setRecipes] = useState<Recipe[]>([]);
 
     useEffect(() => {
         axios.get('http://localhost:8080/api/recipes')
@@ -29,12 +37,12 @@ function App() {
     return (
         <>
             <div className="background-overlay"></div>
-            <Header onSearch={handleSearch} />
-            <Navbar />
+            <Header onSearch={handleSearch} searchValue={searchInputValue}/>
+            <Navbar onHomeClick={resetSearch} />
             <div className="background-container">
                 <Routes>
-                    <Route path="/" element={<HomePage recipes={filteredRecipes} />} />
-                    <Route path="/recipe/:id" element={<RecipePage/>} />
+                    <Route path="/" element={<HomePage recipes={filteredRecipes} onBackClick={resetSearch} />} />
+                    <Route path="/recipe/:id" element={<RecipePage />} />
                 </Routes>
             </div>
         </>

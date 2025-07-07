@@ -19,7 +19,6 @@ const RecipePage: React.FC = () => {
     <div className="container">
       <Link to="/" className="tcontainer">← Back to Home</Link>
       <h1 className="container">{recipe.title}</h1>
-      {/* <img src={recipe.image} alt={recipe.title} className="rounded mb-4" /> */}
       <p>{recipe.description}</p>
       <h3 className="container">Ingredients:</h3>
       <ul className="container">

@@ -12,10 +12,16 @@ interface Recipe {
 
 interface HomePageProps {
     recipes: Recipe[];
+    onBackClick: () => void; 
+
 }
-const HomePage: React.FC<HomePageProps> = ({ recipes }) => {
+
+const HomePage: React.FC<HomePageProps> = ({ recipes, onBackClick }) => {
     if (recipes.length === 0) {
-        return (
+        return (<div >
+            <div>
+                <Link to="/" onClick={onBackClick}>← Back to Home</Link>
+            </div>
             <div className="empty-message">
                 <img
                     src="assets/sadfood.png"
@@ -24,7 +30,7 @@ const HomePage: React.FC<HomePageProps> = ({ recipes }) => {
                 />
                 <p>Your recipe book is feeling empty...<br />Let's cook something amazing!</p>
             </div>
-
+        </div>
         );
     }
     return (
