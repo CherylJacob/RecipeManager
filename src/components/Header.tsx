@@ -1,5 +1,5 @@
 import "./Header.css"; // Create this for styling
-import React, { useState } from 'react';
+import React from 'react';
 
 interface HeaderProps {
     onSearch: (query: string) => void;
