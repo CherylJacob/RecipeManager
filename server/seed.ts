@@ -13,7 +13,8 @@ const seedRecipes = [
     image: "/RecipeManager/assets/thaicurry.jpg",
     ingredients: ["Chicken", "Green curry paste", "Coconut milk", "Bamboo shoots", "Thai basil"],
     steps: ["Slice chicken", "Fry curry paste", "Add coconut milk", "Add chicken and vegetables", "Simmer until cooked"],
-    category: "Curry"
+    category: "Curry",
+    favourite:false
   },
   {
     title: "Classic Spaghetti Bolognese",
@@ -21,7 +22,8 @@ const seedRecipes = [
     image: "/RecipeManager/assets/bolognese.jpg",
     ingredients: ["Ground beef", "Onion", "Garlic", "Tomato paste", "Spaghetti"],
     steps: ["Cook onion and garlic", "Add ground beef", "Stir in tomato paste", "Simmer", "Serve over spaghetti"],
-    category: "Pasta"
+    category: "Pasta",
+    favourite:false
   },
   {
     title: "Veggie Stir Fry",
@@ -29,7 +31,8 @@ const seedRecipes = [
     image: "/RecipeManager/assets/veg.jpg",
     ingredients: ["Broccoli", "Bell peppers", "Carrots", "Soy sauce", "Garlic"],
     steps: ["Chop vegetables", "Heat oil", "Add garlic", "Add vegetables", "Stir fry with sauce"],
-    category: "Vegetarian"
+    category: "Vegetarian",
+    favourite:false
   },
   {
     title: "Chocolate Chip Cookies",
@@ -38,6 +41,7 @@ const seedRecipes = [
     ingredients: ["Flour", "Butter", "Brown sugar", "Eggs", "Chocolate chips"],
     steps: ["Mix dry ingredients", "Cream butter and sugar", "Combine all", "Bake at 375°F for 10-12 minutes"],
     category: "Dessert",
+    favourite:false
   },
   {
     title: "Caprese Salad",
@@ -59,6 +63,7 @@ const seedRecipes = [
       "Serve immediately"
     ],
     category: "Salad",
+    favourite:false
   },
   {
     title: "Pasta Aglio e Olio",
@@ -85,6 +90,7 @@ const seedRecipes = [
       "Serve with Parmesan if desired"
     ],
     category: "Pasta",
+    favourite:false
   },
   {
     title: "Classic Pancakes",
@@ -111,6 +117,7 @@ const seedRecipes = [
       "Serve warm with maple syrup and butter"
     ],
     category: "Breakfast",
+    favourite:false
   }
 ];
 
