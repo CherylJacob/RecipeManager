@@ -8,7 +8,7 @@ function Navbar() {
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
         <img src={logo} alt="Recipe Manager Logo" className="navbar-logo-img" />
-        <div className="navbar-title">Recipe Manager</div>
+        <div className="navbar-title">Cheryl's Recipes</div>
         </Link>
       </div>
     </nav>

@@ -39,11 +39,11 @@
 }
 
 .navbar-logo:hover {
-  color: #a6738c; 
+  color: #73a0a6; 
   transform: scale(1.05);
   cursor: pointer;
   text-decoration: none;
-  text-shadow: 0 0 8px rgba(255, 105, 180, 0.4);
+  text-shadow: 0 0 8px rgba(210, 117, 163, 0.4);
 }
 
 .navbar-title {
