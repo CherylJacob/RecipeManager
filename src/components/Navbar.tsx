@@ -12,7 +12,7 @@ const Navbar = ({ onHomeClick }: NavbarProps) => {
       <div className="navbar-container">
         <Link to="/" onClick={onHomeClick} className="navbar-logo">
         <img src={logo} alt="Recipe Manager Logo" className="navbar-logo-img" />
-        <div className="navbar-title">Cheryl's Recipes</div>
+        <div className="navbar-title">Recipe Manager</div>
         </Link>
       </div>
     </nav>

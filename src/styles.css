@@ -140,3 +140,44 @@ body, html, #root {
   transition: all 0.3s ease;
   margin-top: 1rem;
 }
+
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  height: 60vh; /* Reduced overall height */
+  min-height: 400px; /* Minimum height */
+}
+
+@media (min-width: 768px) {
+  .homepage-container {
+    flex-direction: row;
+  }
+}
+
+.left-column {
+  flex: 1; /* Takes less space */
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  overflow-y: auto; /* Allows scrolling if content is long */
+}
+
+.right-column {
+  flex: 2; /* Takes twice the space of left column */
+  min-width: 0; /* Fixes flexbox overflow issues */
+}
+
+.video-wrapper {
+  width: 100%;
+  height: 100%; /* Fills the column */
+  position: relative;
+  background-color: black;
+}
+
+.video-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

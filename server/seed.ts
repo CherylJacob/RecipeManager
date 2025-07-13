@@ -14,7 +14,7 @@ const seedRecipes = [
     ingredients: ["Chicken", "Green curry paste", "Coconut milk", "Bamboo shoots", "Thai basil"],
     steps: ["Slice chicken", "Fry curry paste", "Add coconut milk", "Add chicken and vegetables", "Simmer until cooked"],
     category: "Curry",
-    favourite:false
+    favourite: false
   },
   {
     title: "Classic Spaghetti Bolognese",
@@ -23,7 +23,7 @@ const seedRecipes = [
     ingredients: ["Ground beef", "Onion", "Garlic", "Tomato paste", "Spaghetti"],
     steps: ["Cook onion and garlic", "Add ground beef", "Stir in tomato paste", "Simmer", "Serve over spaghetti"],
     category: "Pasta",
-    favourite:false
+    favourite: false
   },
   {
     title: "Veggie Stir Fry",
@@ -32,7 +32,7 @@ const seedRecipes = [
     ingredients: ["Broccoli", "Bell peppers", "Carrots", "Soy sauce", "Garlic"],
     steps: ["Chop vegetables", "Heat oil", "Add garlic", "Add vegetables", "Stir fry with sauce"],
     category: "Vegetarian",
-    favourite:false
+    favourite: false
   },
   {
     title: "Chocolate Chip Cookies",
@@ -41,7 +41,7 @@ const seedRecipes = [
     ingredients: ["Flour", "Butter", "Brown sugar", "Eggs", "Chocolate chips"],
     steps: ["Mix dry ingredients", "Cream butter and sugar", "Combine all", "Bake at 375°F for 10-12 minutes"],
     category: "Dessert",
-    favourite:false
+    favourite: false
   },
   {
     title: "Caprese Salad",
@@ -63,7 +63,7 @@ const seedRecipes = [
       "Serve immediately"
     ],
     category: "Salad",
-    favourite:false
+    favourite: false
   },
   {
     title: "Pasta Aglio e Olio",
@@ -90,7 +90,7 @@ const seedRecipes = [
       "Serve with Parmesan if desired"
     ],
     category: "Pasta",
-    favourite:false
+    favourite: false
   },
   {
     title: "Classic Pancakes",
@@ -117,8 +117,127 @@ const seedRecipes = [
       "Serve warm with maple syrup and butter"
     ],
     category: "Breakfast",
-    favourite:false
-  }
+    favourite: false
+  },
+  {
+    title: "Avocado Toast with Poached Egg",
+    description: "Creamy avocado on crunchy toast topped with perfect poached eggs",
+    image: "/RecipeManager/assets/avacado.jpg",
+    ingredients: [
+      "2 slices artisan bread",
+      "1 ripe avocado",
+      "2 fresh eggs",
+      "1 tbsp lemon juice",
+      "Red pepper flakes",
+      "Salt and pepper to taste"
+    ],
+    steps: [
+      "Toast bread until golden and crisp",
+      "Mash avocado with lemon juice, salt, and pepper",
+      "Poach eggs in simmering water for 3-4 minutes",
+      "Spread avocado on toast, top with eggs",
+      "Sprinkle with red pepper flakes"
+    ],
+    category: "Breakfast"
+    , favourite: false
+
+  },
+  {
+    title: "Creamy Garlic Mushroom Pasta",
+    description: "Decadent pasta with wild mushrooms in garlic cream sauce",
+    image: "/RecipeManager/assets/garlicpasta.jpg",
+    ingredients: [
+      "400g fettuccine",
+      "300g mixed mushrooms",
+      "3 garlic cloves (minced)",
+      "1 cup heavy cream",
+      "½ cup grated parmesan",
+      "2 tbsp butter",
+      "Fresh parsley (chopped)"
+    ],
+    steps: [
+      "Cook pasta al dente, reserve 1 cup pasta water",
+      "Sauté mushrooms in butter until golden",
+      "Add garlic, cook 1 minute until fragrant",
+      "Pour in cream and parmesan, simmer until thickened",
+      "Toss with pasta, adding pasta water as needed",
+      "Garnish with parsley"
+    ],
+    category: "Pasta", favourite: false
+
+  },
+  {
+    title: "Chocolate Lava Cakes",
+    description: "Individual molten chocolate cakes with gooey centers",
+    image: "/RecipeManager/assets/chocolava.jpg",
+    ingredients: [
+      "170g dark chocolate",
+      "115g butter",
+      "2 eggs + 2 yolks",
+      "½ cup sugar",
+      "¼ cup flour",
+      "1 tsp vanilla extract",
+      "Pinch of salt"
+    ],
+    steps: [
+      "Preheat oven to 220°C (425°F)",
+      "Melt chocolate and butter together",
+      "Whisk eggs, yolks, sugar until pale",
+      "Fold in chocolate mixture, then flour",
+      "Butter and sugar 4 ramekins",
+      "Divide batter, bake 12-14 minutes",
+      "Invert onto plates, dust with cocoa"
+    ],
+    category: "Dessert", favourite: false
+
+  },
+  {
+    title: "Honey Sriracha Chicken Wings",
+    description: "Crispy baked wings with sweet-spicy glaze",
+    image: "/RecipeManager/assets/honeychicken.jpg",
+    ingredients: [
+      "1kg chicken wings",
+      "3 tbsp sriracha",
+      "3 tbsp honey",
+      "2 tbsp soy sauce",
+      "1 tbsp rice vinegar",
+      "1 tsp garlic powder",
+      "1 tsp ginger powder"
+    ],
+    steps: [
+      "Pat wings dry, season with salt",
+      "Bake at 200°C (400°F) for 40 minutes, flipping halfway",
+      "Whisk sauce ingredients in saucepan, simmer 5 minutes",
+      "Toss wings in sauce, broil 2 minutes per side",
+      "Garnish with sesame seeds and green onions"
+    ],
+    category: "Appetizer", favourite: false
+
+  },
+  {
+    title: "Mango Coconut Chia Pudding",
+    description: "Tropical overnight pudding with fresh mango",
+    image: "/RecipeManager/assets/mangochia.jpg",
+    ingredients: [
+      "½ cup chia seeds",
+      "2 cups coconut milk",
+      "1 ripe mango",
+      "2 tbsp honey",
+      "1 tsp vanilla extract",
+      "Toasted coconut flakes"
+    ],
+    steps: [
+      "Whisk chia seeds, coconut milk, honey and vanilla",
+      "Refrigerate overnight (or at least 4 hours)",
+      "Puree mango with 1 tbsp water",
+      "Layer pudding with mango puree in glasses",
+      "Top with coconut flakes and mango cubes"
+    ],
+    category: "Healthy", favourite: false
+
+  },
+
+
 ];
 
 async function seed() {
